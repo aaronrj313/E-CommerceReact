@@ -32,14 +32,31 @@ function App() {
 
   const renderProducts = () => {
     return products.map(p =>
-      <div>{p.title}</div>  
+      <div>{p.title}</div> 
     )
   }
 
   return (
   <>
-  <header>My Store</header>
+  <section id="hero-banner">
+            <nav>
+                <div class="right-side">
+                    <a>Home</a>
+                    <a>About Us</a>
+                    <a>Services</a>
+                    <a>Project Gallery</a>
+                    <a>Contact Us</a>
+                </div>
+            </nav>
+            
+            <h1>Urban roofing innovation for the modern home</h1>
+            <a id="button">   
+                Learn More
+            </a>
+  </section>
 
+
+  
   <section>
     <nav>
       {categories && renderCategories()}
